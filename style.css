@@ -1,0 +1,76 @@
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    .headcontainer{
+        flex-direction: row;
+        display: flex;
+        height: 15%;
+    }
+
+    .header{
+        border-right: 5px rgb(0, 255, 0) solid;
+        white-space: nowrap;
+        margin: 0 auto;
+        overflow: hidden;
+        height:100%;
+        width: 61%;
+        font-family:Courier New;
+        color: rgb(0, 255, 0);
+        font-size:700%;
+        animation:
+        TextDisplay 2s steps(27, end),
+        Blinking .5s step-end infinite;
+    }
+
+    @keyframes TextDisplay{
+        from{width: 0%}
+        to{width: 61%}
+    }
+
+    @keyframes Blinking{
+        0{border-color: green;}
+        50%{border-color: transparent;}
+        100%{border-color: green;}
+    }
+    h3{
+        height:10%;
+        font-family:Courier New;
+        color: rgb(0, 200, 0);
+    }
+    .tabs {
+        height: 5%;
+        width: 100%;
+        margin-left: -0.5%;
+        background-color: rgb(26, 26, 26);
+
+    }
+
+    .container{
+        margin: auto;
+        width: 30%;
+        height: 100%;
+    }
+
+    .button{
+        width: 32%;
+        display: overflow;
+        background-color: #4CAF50;
+        height: 100%;
+        border: none;
+        color: white;
+        text-align: center;
+    }
+
+    p{
+        width: 50%;
+        height: 30%;
+        color: rgb(0, 255, 0);
+        font-family:Courier New;
+        overflow: hidden;
+        font:size: 100%;
+        padding: 30px;
+    }
