@@ -12,7 +12,7 @@
     }
 
     .header{
-        border-right: 1px rgb(0, 255, 0) solid;
+        border-right: 0.05em  rgb(0, 255, 0) solid;
         white-space: nowrap;
         margin: 0 auto;
         overflow: hidden;
@@ -20,7 +20,7 @@
         width: 61%;
         font-family:Courier New;
         color: rgb(0, 255, 0);
-        font-size:700%;
+        font-size:7 em;
         animation:
         TextDisplay 2s steps(27, end),
         Blinking .5s step-end infinite;
