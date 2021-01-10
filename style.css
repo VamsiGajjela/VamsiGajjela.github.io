@@ -13,7 +13,11 @@
     }
 
     .header{
+<<<<<<< HEAD
         border-right: 1px green solid;
+=======
+        border-right: 0.05em  rgb(0, 255, 0) solid;
+>>>>>>> b361d9febf160aebdd4267077f50a80ddc12c131
         white-space: nowrap;
         overflow: hidden;
         margin: 0 auto;
