@@ -3,38 +3,37 @@
         width: 100%;
         background-color: black;
         overflow: hidden;
+        position: fixed;
     }
 
     .headcontainer{
-        flex-direction: row;
-        display: flex;
-        height: 15%;
+        width:fit-content;
+        height:fit-content;
+        margin: 0 auto;
     }
 
     .header{
-        border-right: 5px rgb(0, 255, 0) solid;
+        border-right: 1px green solid;
         white-space: nowrap;
-        margin: 0 auto;
         overflow: hidden;
-        height:100%;
-        width: 61%;
+        margin: 0 auto;
         font-family:Courier New;
+        font-size: 20vh;
         color: rgb(0, 255, 0);
-        font-size:700%;
         animation:
         TextDisplay 2s steps(27, end),
         Blinking .5s step-end infinite;
     }
 
     @keyframes TextDisplay{
-        from{width: 0%}
-        to{width: 61%}
+        from{width: 0%;}
+        to{width: 100%;}
     }
 
     @keyframes Blinking{
-        0{border-color: green;}
-        50%{border-color: transparent;}
-        100%{border-color: green;}
+        0{border-right-color: green;}
+        50%{border-right-color: transparent;}
+        100%{border-right-color: green;}
     }
     h3{
         height:10%;
