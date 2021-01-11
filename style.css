@@ -4,6 +4,12 @@
         background-color: black;
         overflow: hidden;
         position: fixed;
+        z-index: 0;
+    }
+
+    .headcontainer{
+        width:fit-content;
+        margin: 0 auto;
     }
 
     .header{
