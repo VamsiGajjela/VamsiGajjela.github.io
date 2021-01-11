@@ -4,7 +4,27 @@
         background-color: black;
         overflow: hidden;
         position: fixed;
+        z-index: 0;
     }
+
+    .intro{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        position: fixed;
+        font-family:Courier New;
+        font-size: 9.7vw;
+        color:transparent;
+        text-align: center;
+        z-index: -1;
+        animation: Intro 4s
+    }
+
+    @keyframes Intro{
+        from{background-color: black; z-index: 1; color: black; animation-delay: 3s;}
+        to{background: transparent; z-index: -1; color: transparent;}
+    }
+
 
     .headcontainer{
         width:fit-content;
@@ -20,11 +40,14 @@
         font-family:Courier New;
         font-size: 9.7vw;
         color: rgb(0, 255, 0);
-        animation:
-        TextDisplay 2s steps(27, end),
-        Blinking .5s step-end infinite;
+        animation: BlackScreen 3s, TextDisplay 2s steps(27, end), Blinking .5s step-end infinite;
+        animation-delay:0s, 2.9s, 2.9s;
     }
 
+    @keyframes BlackScreen{
+        from{color:black; border-right: transparent;}
+        to{color:transparent; border-right: transparent;}
+    }
     @keyframes TextDisplay{
         from{width: 0%;}
         to{width: 100%;}
@@ -64,12 +87,38 @@
         text-align: center;
     }
 
+    .info{
+        border: 1px pink solid;
+        width: fit-content;
+        height: fit-content;
+    }
+
     p{
         width: 50%;
         height: 30%;
         color: rgb(0, 255, 0);
         font-family:Courier New;
         overflow: hidden;
+        position:relative;
         font:size: 100%;
         padding: 30px;
+        animation: ColourChange 10s;
     }
+
+    @keyframes ColourChange{
+        from{color: transparent; animation-delay: 2s;}
+        to{color: rgb(0, 255, 0);}
+    }
+    @keyframes BoxDrop{
+        from{
+            left: 0%; top: -130%; z-index:2;
+            color: rgb(0,255,0); font-size: 0.9em;
+            font-family: OCR A Std;
+            }
+        to{
+            left: 0%; top: 25%; z-index:2;
+            color: transparent; font-size: 0.9em;
+            font-family: OCR A Std;
+        }
+    }
+
