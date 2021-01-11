@@ -9,14 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<div class="intro"></div>
-
-
 <body>
 
-<div class="headcontainer">
-    <div class="header">Vamsi Gajjela</div>
-</div>
+<div class="header">Vamsi Gajjela</div>
 
 
 <center>
@@ -49,28 +44,6 @@
         thanks for stopping by.
     </p>
 </center>
-
-<script>
-    var char = '01';
-    var len = char.length;
-    for (j = 0; j < 2; j++){
-    for (i = 0; i < 1000; i ++){
-        var div = document.createElement("div");
-        div.style.margin = "0.4%";
-        div.style.bottom = "100%";
-        div.style.position = "relative";
-        div.style.display = "inline-block";
-        div.style.animation = "BoxDrop 5s";
-        div.style.color = "transparent";
-        div.innerHTML = char.charAt(Math.floor(Math.random() * len))
-        if (i % 2 == 0){
-            div.style.animationDelay = "65ms";
-            }
-            document.body.appendChild(div);
-    }
-    }
-
-</script>
 
 </body>
 </html>
